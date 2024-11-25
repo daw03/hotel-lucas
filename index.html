@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
+    <title>Home - Asia Gardens Hotel</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -23,9 +23,38 @@
         min-height: 100vh;
         margin: 0;
       }
+
+      :focus {
+        outline: 2px solid #ffffff;
+        outline-offset: 4px;
+      }
+
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        border: 0;
+      }
+
+      .sr-only-focusable:active,
+      .sr-only-focusable:focus {
+        position: static;
+        width: auto;
+        height: auto;
+        margin: 0;
+        overflow: visible;
+        clip: auto;
+      }
     </style>
   </head>
   <body class="bg-dark text-white">
+    <!-- Link to skip to main content -->
+    <a href="#main-content" class="sr-only sr-only-focusable">Skip to content</a>
+
     <!-- Navbar -->
     <nav
       class="navbar navbar-expand-lg navbar-dark fixed-top"
@@ -86,7 +115,7 @@
     </nav>
 
     <!-- Main Content -->
-    <main class="container my-5 pt-5">
+    <main id="main-content" class="container my-5 pt-5">
       <!-- Hero Section -->
       <div class="row align-items-center">
         <div class="col-md-6">
@@ -113,7 +142,7 @@
           <img
             src="assets/zen.jfif"
             class="img-fluid rounded shadow-lg"
-            alt="Asia Gardens Hotel"
+            alt="View of Zen Pool at Asia Gardens Hotel"
           />
         </div>
       </div>
@@ -126,7 +155,7 @@
               <img
                 src="assets/piscina.jpg"
                 class="card-img"
-                alt="Zen Pools"
+                alt="Infinity Zen Pools at Asia Gardens Hotel"
               />
               <div
                 class="card-img-overlay d-flex flex-column justify-content-end"
@@ -146,7 +175,7 @@
               <img
                 src="assets/garden3.PNG"
                 class="card-img"
-                alt="Tropical Gardens"
+                alt="Lush tropical gardens at Asia Gardens Hotel"
               />
               <div
                 class="card-img-overlay d-flex flex-column justify-content-end"
@@ -163,7 +192,7 @@
 
           <div class="col-md-4">
             <div class="card bg-dark text-white border-0">
-              <img src="assets/spa2.jpg" class="card-img" alt="Thai Spa" />
+              <img src="assets/spa2.jpg" class="card-img" alt="Exclusive Thai Spa at Asia Gardens Hotel" />
               <div
                 class="card-img-overlay d-flex flex-column justify-content-end"
               >
@@ -228,41 +257,45 @@
       class="text-white mt-auto py-3"
       style="background-color: rgba(14, 23, 13, 0.8)"
     >
-      <div class="container">
-        <div class="row">
-          <!-- Location Column -->
-          <div class="col-md-6">
-            <h5>Location</h5>
-            <p>
-              Asia Gardens Hotel <br />
-              123 Fake Street <br />
-              Garden City, Fictional Province <br />
-              Zip Code: 12345
-            </p>
-          </div>
-
-          <!-- Social Media Column -->
-          <div class="col-md-6 text-md-end">
-            <h5>Follow Us</h5>
-            <div class="social-icons">
-              <a href="#" class="text-white me-3"
-                ><i class="bi bi-instagram"></i
-              ></a>
-              <a href="#" class="text-white me-3"
-                ><i class="bi bi-facebook"></i
-              ></a>
-            </div>
-          </div>
+    <footer
+    class="text-white mt-auto py-3"
+    style="background-color: rgba(14, 23, 13, 0.8)"
+  >
+    <div class="container">
+      <div class="row">
+        <!-- Location Column -->
+        <div class="col-md-6">
+          <h5>Location</h5>
+          <p>
+            Asia Gardens Hotel <br />
+            123 Fake Street <br />
+            Garden City, Fictional Province <br />
+            Zip Code: 12345
+          </p>
         </div>
 
-        <!-- Centered Copyright Text -->
-        <div class="row">
-          <div class="col-12 text-center">
-            <p>&copy; 2024 Asia Gardens Hotel. All rights reserved.</p>
+        <!-- Social Media Column -->
+        <div class="col-md-6 text-md-end">
+          <h5>Follow Us</h5>
+          <div class="social-icons">
+            <a href="#" class="text-white me-3"
+              ><i class="bi bi-instagram"></i
+            ></a>
+            <a href="#" class="text-white me-3"
+              ><i class="bi bi-facebook"></i
+            ></a>
           </div>
         </div>
       </div>
-    </footer>
+
+      <!-- Centered Copyright Text -->
+      <div class="row">
+        <div class="col-12 text-center">
+          <p>&copy; 2024 Asia Gardens Hotel. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
